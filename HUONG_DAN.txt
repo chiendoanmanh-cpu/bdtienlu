@@ -1,0 +1,30 @@
+BẢN ĐỒ ĐỊA CHÍNH XÃ TIÊN LỮ - WEBSITE QUẢN LÝ
+==============================================
+
+Cách dùng
+- Mở file index.html bằng Chrome/Edge/Firefox (cần Internet để tải ảnh vệ tinh Google).
+- Có thể chép cả thư mục lên máy chủ web nội bộ (IIS, Apache, Nginx...) để nhiều người cùng dùng.
+  Không cần cơ sở dữ liệu hay phần mềm cài thêm.
+
+Nội dung
+- index.html : giao diện bản đồ (tra cứu, thông tin thửa, đo đạc, thống kê)
+- data.js    : dữ liệu 25.490 thửa của 99 tờ bản đồ (đã ghép), tọa độ gốc VN-2000
+- TienLu_ThuaDat_WGS84.geojson : toàn bộ thửa đất dạng GeoJSON (WGS84) để mở trong QGIS/ArcGIS/Google Earth
+
+Đánh số tờ sau ghép
+- Tờ 1-27  : xã Hải Triều cũ (tờ cũ 1-27)
+- Tờ 28-49 : xã Đức Thắng cũ (tờ cũ 1-22)
+- Tờ 50-72 : xã Thụy Lôi cũ (tờ cũ 1-23)
+- Tờ 73-99 : xã Thiện Phiến cũ (tờ cũ 1-27)
+
+Hệ tọa độ: VN-2000, kinh tuyến trục 105°30', múi chiếu 3° (Hưng Yên).
+Chuyển sang WGS84 bằng 7 tham số theo QĐ 05/2007/QĐ-BTNMT để chồng lên ảnh Google.
+
+Lưu ý
+- Dữ liệu có họ tên chủ sử dụng: chỉ dùng nội bộ, không đưa lên mạng công khai.
+- Ranh thửa được dựng lại từ đường ranh trong file DGN (Famis). Diện tích "hồ sơ" lấy từ
+  file DBF/nhãn thửa khi có; "đo trên bản đồ" được tính từ ranh thửa.
+- Tờ 11 (Hải Triều) và tờ 48 (Đức Thắng): file trong RAR bị lỗi khi giải nén, đã dùng bản
+  lưu trước đó (SVN) / phần đọc được. Nên cập nhật lại từ file gốc.
+- Thôn sau sắp xếp (TB 395/TB-UBND ngày 01/7/2026) xác định theo địa chỉ ghi trong dữ liệu;
+  thửa không có địa chỉ được gán theo thửa lân cận (ghi "ước tính").
